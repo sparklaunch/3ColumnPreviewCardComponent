@@ -31,6 +31,7 @@ struct Item: View {
                     .font(.custom("Lexend Deca", size: 18))
                     .foregroundColor(.white)
                     .lineSpacing(5)
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
                     .frame(height: 40)
                 Button {

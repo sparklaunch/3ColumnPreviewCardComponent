@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color.white
-            Container()
+        ScrollView {
+            ZStack {
+                Color.white
+                Container()
+            }
         }
         .ignoresSafeArea()
     }
