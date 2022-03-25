@@ -15,6 +15,8 @@
 		900890E627ED4D61009C364D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900890D327ED4D61009C364D /* Assets.xcassets */; };
 		900890F127ED4E0B009C364D /* LexendDeca.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900890F027ED4E0B009C364D /* LexendDeca.ttf */; };
 		900890F327ED4E17009C364D /* BigShouldersDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900890F227ED4E17009C364D /* BigShouldersDisplay.ttf */; };
+		900890F727ED508E009C364D /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900890F627ED508E009C364D /* Container.swift */; };
+		900890F927ED50C0009C364D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900890F827ED50C0009C364D /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		900890F027ED4E0B009C364D /* LexendDeca.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LexendDeca.ttf; sourceTree = "<group>"; };
 		900890F227ED4E17009C364D /* BigShouldersDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigShouldersDisplay.ttf; sourceTree = "<group>"; };
 		900890F427ED4E2D009C364D /* -ColumnPreviewCardComponent--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-ColumnPreviewCardComponent--iOS--Info.plist"; sourceTree = "<group>"; };
+		900890F627ED508E009C364D /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		900890F827ED50C0009C364D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		900890D027ED4D60009C364D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				900890F527ED5082009C364D /* Components */,
 				900890EF27ED4DF6009C364D /* Fonts */,
 				900890D127ED4D60009C364D /* _ColumnPreviewCardComponentApp.swift */,
 				900890D227ED4D60009C364D /* ContentView.swift */,
@@ -92,6 +97,15 @@
 				900890F027ED4E0B009C364D /* LexendDeca.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		900890F527ED5082009C364D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				900890F627ED508E009C364D /* Container.swift */,
+				900890F827ED50C0009C364D /* Item.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900890F927ED50C0009C364D /* Item.swift in Sources */,
 				900890E327ED4D61009C364D /* ContentView.swift in Sources */,
+				900890F727ED508E009C364D /* Container.swift in Sources */,
 				900890E127ED4D61009C364D /* _ColumnPreviewCardComponentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
