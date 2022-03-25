@@ -13,6 +13,8 @@
 		900890E427ED4D61009C364D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900890D227ED4D60009C364D /* ContentView.swift */; };
 		900890E527ED4D61009C364D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900890D327ED4D61009C364D /* Assets.xcassets */; };
 		900890E627ED4D61009C364D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900890D327ED4D61009C364D /* Assets.xcassets */; };
+		900890F127ED4E0B009C364D /* LexendDeca.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900890F027ED4E0B009C364D /* LexendDeca.ttf */; };
+		900890F327ED4E17009C364D /* BigShouldersDisplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900890F227ED4E17009C364D /* BigShouldersDisplay.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		900890D827ED4D61009C364D /* 3ColumnPreviewCardComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3ColumnPreviewCardComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		900890DE27ED4D61009C364D /* 3ColumnPreviewCardComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3ColumnPreviewCardComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		900890E027ED4D61009C364D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		900890F027ED4E0B009C364D /* LexendDeca.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LexendDeca.ttf; sourceTree = "<group>"; };
+		900890F227ED4E17009C364D /* BigShouldersDisplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigShouldersDisplay.ttf; sourceTree = "<group>"; };
+		900890F427ED4E2D009C364D /* -ColumnPreviewCardComponent--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-ColumnPreviewCardComponent--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 		900890CB27ED4D60009C364D = {
 			isa = PBXGroup;
 			children = (
+				900890F427ED4E2D009C364D /* -ColumnPreviewCardComponent--iOS--Info.plist */,
 				900890D027ED4D60009C364D /* Shared */,
 				900890DF27ED4D61009C364D /* macOS */,
 				900890D927ED4D61009C364D /* Products */,
@@ -54,6 +60,7 @@
 		900890D027ED4D60009C364D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				900890EF27ED4DF6009C364D /* Fonts */,
 				900890D127ED4D60009C364D /* _ColumnPreviewCardComponentApp.swift */,
 				900890D227ED4D60009C364D /* ContentView.swift */,
 				900890D327ED4D61009C364D /* Assets.xcassets */,
@@ -76,6 +83,15 @@
 				900890E027ED4D61009C364D /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		900890EF27ED4DF6009C364D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				900890F227ED4E17009C364D /* BigShouldersDisplay.ttf */,
+				900890F027ED4E0B009C364D /* LexendDeca.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900890F327ED4E17009C364D /* BigShouldersDisplay.ttf in Resources */,
 				900890E527ED4D61009C364D /* Assets.xcassets in Resources */,
+				900890F127ED4E0B009C364D /* LexendDeca.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +261,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +315,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -312,6 +334,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-ColumnPreviewCardComponent--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +365,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-ColumnPreviewCardComponent--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
